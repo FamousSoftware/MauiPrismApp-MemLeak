@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiPrismApp.Views.Page2"
+             Title="Page2">
+    <VerticalStackLayout>
+      <Label 
+        Text="Page 2"
+        FontSize="Large"
+        FontAttributes="Bold"
+        HorizontalOptions="Center"
+        Margin="0,20" />
+
+      <Button Text="Go To Page1" Command="{Binding NavPage1Command}" WidthRequest="300" Margin="0,20"/>
+      <Button Text="Go To Page1 Clear Stack" Command="{Binding NavPage1ClearStackCommand}" WidthRequest="300" Margin="0,20"/>
+      <Button Text="Go Back Page" Command="{Binding NavGoBackCommand}" WidthRequest="300" Margin="0,20"/>
+  </VerticalStackLayout>
+</ContentPage>
